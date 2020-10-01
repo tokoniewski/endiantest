@@ -24,9 +24,17 @@ int main(int argc, char* argv[])
 
     // test za pomocą castingu
     int liczba2 = 0x31323334;
-    int l3 = 0;
+    int l2 = 0;
     char* znaki2 = (char *)&liczba2;
 
     std::cout << znaki2 << std::endl;
+
+    short int liczba3[2];
+    liczba3[0] = 0x3132;
+    liczba3[1] = 0x3334;
+    int l3 = 0;
+    char* znaki3 = (char *)&liczba3;
+
+    std::cout << znaki3[0] << znaki3[1] << znaki3[2] << znaki3[3] << std::endl;
 
 }
